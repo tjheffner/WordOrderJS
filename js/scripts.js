@@ -2,7 +2,6 @@ var count = function(block) {
 
 //set variables
   var words = block.split(" "),
-      sorted = words.sort(),
       frequency = {},
       words_freq, ordered,
       i, word, output;
@@ -35,9 +34,15 @@ $(document).ready(function() {
   $('form#input').submit(function(event) {
     var input = $('textarea#block').val();
     var result = count(input);
+    var output = "";
 
     $("#count").text(result[0]);
-    $("#list").text(result[1]);
+
+    result[1].forEach(function(word) {
+      output += "<li>" + word + "</li>";
+    });
+
+    $("#list").append(output);
 
     $('#result').show();
     event.preventDefault();
