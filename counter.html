@@ -14,14 +14,16 @@
         <form id="input">
           <div class="form-group">
             <label for="word">Enter a block of text to find the word counts:</label>
-            <input type="textarea" name="block" id="block" class="form-control">
+            <textarea type="input" name="block" id="block" class="form-control"></textarea>
           </div>
           <button type="submit" class="btn btn-info">Count</button>
         </form>
 
         <div id="result">
-          <h3>The counts: </h3>
-          <p><span id="count" class="text-danger"></span></p>
+          <h3>Word count: <span id="count" class="text-danger"></span></h3>
+          <ul>
+            <li><span id="list" class="text-danger"></span></li>
+          </ul>
         </div>
 
     </div>

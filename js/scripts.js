@@ -29,3 +29,18 @@ var count = function(block) {
 
   return output;
 };
+
+$(document).ready(function() {
+
+  $('form#input').submit(function(event) {
+    var input = $('textarea#block').val();
+    var result = count(input);
+
+    $("#count").text(result[0]);
+    $("#list").text(result[1]);
+
+    $('#result').show();
+    event.preventDefault();
+
+  });
+});
