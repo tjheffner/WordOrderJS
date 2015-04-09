@@ -47,5 +47,15 @@ $(document).ready(function() {
     $('#result').show();
     event.preventDefault();
 
+    $('#clear').click(function() {
+      input = "";
+      output = "";
+      $("#list").empty();
+
+      $('#result').hide();
+
+    });
+
   });
+
 });
