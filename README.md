@@ -4,7 +4,7 @@
 #### Description
 
 This app allows users to input a block of words and returns the overall word count, plus
-the count of each individual word, ordered by number of times a word appeared.
+a list of words entered ordered by number of times a word appeared.
 
 #### Setup instructions
 1. Clone this git repository
